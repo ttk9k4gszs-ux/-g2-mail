@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>g2-mail Privacy Policy</title></head>
+<body style="font-family:sans-serif;max-width:640px;margin:2em auto;line-height:1.6">
+<h1>g2-mail Privacy Policy</h1>
+<p>Last updated: 2026-11-23</p>
+
+<h2>What this app is</h2>
+<p>g2-mail is a personal tool used by a single user (its owner) to read and
+send email from one dedicated Gmail account, displayed on Even Realities G2
+smart glasses.</p>
+
+<h2>Data accessed</h2>
+<p>With the owner's authorization, the app accesses Gmail messages of the
+dedicated account through the Gmail API, using only these scopes:
+read messages (gmail.readonly) and send messages (gmail.send).
+The app cannot delete messages.</p>
+
+<h2>How data is handled</h2>
+<ul>
+<li>Requests pass through a Cloudflare Worker operated by the owner.
+The Worker is stateless: it stores no email content, keeps no logs of
+message bodies, and holds no database.</li>
+<li>Email content is shown only on the owner's own devices (the glasses
+plugin and its companion phone UI).</li>
+<li>No data is sold, shared with third parties, or used for advertising
+or analytics.</li>
+</ul>
+
+<h2>Credentials</h2>
+<p>OAuth credentials are stored as encrypted secrets in the owner's own
+Cloudflare account. The owner can revoke the app's access at any time from
+the Google Account permissions page, which immediately disables all access.</p>
+
+<h2>Contact</h2>
+<p>The owner can be reached at the Gmail account that authorized this app.</p>
+</body>
+</html>
